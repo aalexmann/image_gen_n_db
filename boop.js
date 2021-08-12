@@ -6,7 +6,8 @@ function SearchPhotos(){
     let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId + "&query=" + query;
   
     // make a request to URI
-  
+    blank = ` `
+    $("#result").html(blank);
     fetch(url)
         .then(function (data) {
             return data.json();
@@ -18,9 +19,17 @@ function SearchPhotos(){
               <img src="${photo.urls.small}">
               <a href="${photo.links.download}
             `;
-            $("#result").html(result);
+            $("#result").append(result);
             
           });
         })
   
+  };
+function openImgSearch(){
+    let x = document.getElementById("unsplash");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    };
   };
