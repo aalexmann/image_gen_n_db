@@ -10,12 +10,12 @@ img {
     display: block;
 }
 #unsplash {
-    display: none;
+    display: block;
 }
-.boophide {
+.openImgSearch {
     display: none;
   }
   
-.boophover:hover + .boophide {
+.hoverSearch:hover + .boophide {
     display: block;
   }
