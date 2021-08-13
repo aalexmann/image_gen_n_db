@@ -7,24 +7,14 @@
     <title>Image Microservice</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <!-- <h1>
-        Here are the albums for account: <ins id="acctId">#</ins>
-    </h1> -->
-</header>
+
 <body>
     
-    <!-- BUG: The div below works at hiding and unhiding the button that triggers the openImgSearch, however it is
-    not possible to click the button without it disappearing the second you hover off of the div, to click the appearing
-    button underneath.
-        PSEUDO-SOLUTION: The div with the "boophover" class should under/over lap the "boophide" button. The div should
-    of an adjustable size (50X50px for example) but should also be 100% transparant.-->
-    
-    <!-- <div class="boophover">This section is a div where a field or blank image cell will be placed on the page of the person
-        using the image generating microservice. When hovered over, this div displays a button that, once clicked, will open
-        the image search bar.
+    <!-- BUG: Div/class "hoverSearch" needs to be transparent and overlap the Button/class "openImgSearch".-->
+    <!-- <div class="hoverSearch">
     </div> -->
-    <button class="boophide" onclick="openImgSearch()">Click Here To add an image</button>
+
+    <button class="openImgSearch" onclick="openImgSearch()">Click Here To add an image</button>
     <container id="unsplash">
 
         <input title="Image Search" id="imgSearch" type="text" placeholder="Search Photos">   
@@ -33,18 +23,12 @@
         <div id="result"></div>
 
     </container>
-    <!-- <div class="albumCover">
-        <label>Food</label>
-        <img >
-    </div> -->
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-    <script src="boop.js">
+    <script src="script.js">
     </script>
 
 </body>
