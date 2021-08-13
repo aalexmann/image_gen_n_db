@@ -1,5 +1,3 @@
-
-
 function SearchPhotos(){
     let clientId = 'tkSEqmMA6oBopz6N2zHXWXuQkLpCUCY5qMF8h6E5Kts'
     let query = document.getElementById("imgSearch").value; 
