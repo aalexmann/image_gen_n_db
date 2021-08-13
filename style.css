@@ -16,6 +16,6 @@ img {
     display: none;
   }
   
-.hoverSearch:hover + .boophide {
+.hoverSearch:hover + .openImgSearch {
     display: block;
   }
